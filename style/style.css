@@ -192,6 +192,7 @@ body {
    transform: rotate(180deg);
    font-size: 50px;
 }
+
 @keyframes slideRight {
     from{
         transform: translateX(-100%);
@@ -281,75 +282,6 @@ body {
 }
 
 /*  skills*/
-.skills{
-    margin: 10px;
-}
-.skills .row{
-    display: grid;
-    grid-template-columns: 50px 100px;
-}
-.skills .box{
-    border-bottom: 1px solid rgba(128, 128, 128, 0.786);
-    border-left: 1px solid rgba(128, 128, 128, 0.786);
-    padding: 50px 50px 0px 50px;
-    width: 750px ;
-}
-.skills .row .left{
-    display: flex;
-    flex-direction: column;
-    gap: 4.3rem;
-    padding-top: 35px;
-}
-.skills .box .row{
-    display: flex;
-    flex-direction: row;
-    gap: 6rem;
-}
-.box .box-1{
-    width: 75px;
-    height: 450px;
-    background-color: #e8bcf089;
-}
-.box .box-2{
-    width: 75px;
-    height: 400px;
-    background-color: #e8bcf089;
-}
-.box .box-2-2{
-    width: 75px;
-    height: 50px;
-    background-color: transparent;
-}
-.box .box-3{
-    width: 75px;
-    height: 400px;
-    background-color: #e8bcf089;
-}
-.box .box-4{
-    width: 75px;
-    height: 50px;
-    background-color: #e8bcf089;
-}
-.box .box-2-3{
-    width: 75px;
-    height: 400px;
-    background-color: transparent;
-}
-.box .box-5{
-    width: 75px;
-    height: 50px;
-    background-color: #e8bcf089;
-}
-.skills .x-axis{
-    display: flex;
-    flex-direction: row;
-    gap: 7rem;
-    padding: 0 108px;
-}
-.skills .x-axis p{
-    width: 60px;
-    text-align: center;
-}
 .skills .headding h1{
    position: absolute;
    left: 100px;
@@ -371,16 +303,48 @@ body {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 130px;
+    margin-top: 50px;
 }
 .services .row .col{
     border: 1px solid #685b7d;
     width: 270px;
     padding: 20px;
-    text-align: center;
     border-radius: 5px;
     font-size: 12px;
     background-color: rgba(0, 0, 0, 0.203);
+    text-align: center;
+    height: 167px;
+}
+.services .row .col .rowSpan{
+    display: none;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.services .row .col .rowSpan span{
+    background-color: #e8bcf0;
+    padding: 5px 15px;
+    color: #3C3448;
+    border-radius: 15px;
+    margin-left: 5px;
+}
+
+.services .arrow, .services .arrow2, .services .arrow1{
+    margin-bottom: -20px;
+    padding: 15px 0;
+    cursor: pointer;
+}
+.services .rowSkills{
+    display: flex;
+    gap: 7rem;
+    margin-top: 40px;
+    padding: 0 100px;
+}
+.services .rowSkills .column:first-child{
+    width: 200px;
+}
+.rotate{
+    transform: rotate(180deg);
 }
 /* Contact */
 .contact .row{

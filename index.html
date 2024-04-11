@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
     <link rel="stylesheet" href="style/style.css">
-    <title>Tihtina Sete</title>
+    <title>Tihitna Sete</title>
 </head>
 <body>
     <div class="navBar">
@@ -15,7 +15,7 @@
             <ul>
                 <li><a id="aboutLink">About</a></li>
                 <li><a id="projectsLink">Projects</a></li>
-                <li><a id="skillsLink">Skills & Services</a></li>
+                <li><a id="skillsLink">Services</a></li>
                 <li><a id="contactLink">Contact</a></li>
             </ul>
         </div>
@@ -120,71 +120,97 @@
             </div>
         </div>
         <div class="skills" id="skills">
-            <div class="headding">
-                <h1 id="skillsHeadding">Skills</h1>
-            </div>
-            <div class="row">
-                <div class="col left">
-                    <p>100%</p>
-                    <p>75%</p>
-                    <p>50%</p>
-                    <p>25%</p>
-                    <p>0%</p>
-                </div>
-                <div class="col">
-                    <div class="box">
-                        <div class="row">
-                            <div class="col">
-                                <div class="box-1"></div>
-                            </div>
-                            <div class="col">
-                                <div class="box-2-2"></div>
-                                <div class="box-2"></div>
-                            </div>
-                            <div class="col">
-                                <div class="box-2-2"></div>
-                                <div class="box-3"></div>
-                            </div>
-                            <div class="col">
-                                <div class="box-2-3"></div>
-                                <div class="box-4"></div>
-                            </div>
-                            <div class="col">
-                                <div class="box-2-3"></div>
-                                <div class="box-5"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div> 
-            <div class="row x-axis">
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JavaScript</p>
-                <p>ReactJS</p>
-                <p>MongoDB</p>
-            </div>
             <div class="services">
-                <div class="headding">
+                <!-- <div class="headding">
                     <h1>Services</h1>
-                </div>
+                </div> -->
                 <div class="row">
-                    <div class="col">
+                    <div class="col" id="firstCol">
                         <img src="img/web.svg" alt="">
                         <h2>Web Development</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, similique.</p>
+                        
+                        <div class="rowSpan" id="rowSpan1">
+                            <span>Wordpress</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>PHP</span>
+                            <span>Mysql</span>
+                            <span>Javascript</span>
+                            <span>ReactJS</span>
+                            <span>MongoDB</span>
+                            <span>ExpressJS</span>
+                        </div>
+                        <div class="arrow1" id="arrow1">
+                            <img src="img/arrow.svg" alt="">
+                        </div>
                     </div>
-                    <div class="col">
+                    <div class="col" id="secondCol">
                         <img src="img/update.svg" alt="">
                         <h2>Web Customization</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, minus.</p>
+                        <div class="rowSpan" id="rowSpan">
+                            <span>Wordpress</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>PHP</span>
+                            <span>Mysql</span>
+                            <span>Javascript</span>
+                            <span>ReactJS</span>
+                            <span>MongoDB</span>
+                            <span>ExpressJS</span>
+                        </div>
+                        <div class="arrow" id="arrow">
+                            <img src="img/arrow.svg" alt="">
+                        </div>
                     </div>
-                    <div class="col">
+                    <div class="col" id="thirdCol">
                         <img src="img/mobile.svg" alt="">
                         <h2>Mobile App Development</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, consequatur.</p>
+                        <div class="rowSpan" id="rowSpan2">
+                            <span>Flutter</span>
+                            <span>Python</span>
+                            
+                        </div>
+                        <div class="arrow2" id="arrow2">
+                            <img src="img/arrow.svg" alt="">
+                        </div>
+                    </div>
+                </div><br>
+                <div class="rowSkills">
+                    <div class="column">
+                        <h3>Front-End Development:</h3>
+                    </div>
+                    <div class="column">
+                        <img src="img/reactjs.svg" alt="">
+                    </div>
+                    <div class="column">
+                        <img src="img/css.svg" alt="">
+                    </div>
+                    <div class="column">
+                        <img src="img/html.svg" alt="">
+                    </div>
+                    <div class="column">
+                        <img src="img/js.svg" alt="">
                     </div>
                 </div>
+                <div class="rowSkills">
+                    <div class="column">
+                        <h3>Back-End Development:</h3>
+                    </div>
+                    <div class="column">
+                        <img src="img/php.svg" alt="">
+                    </div>
+                    <div class="column">
+                        <img src="img/node.svg" alt="">
+                    </div>
+                    <div class="column"><img src="img/mysql.svg" alt=""></div>
+                    <div class="column"><img src="img/python.svg" alt=""></div>
+                    <div class="column"><img src="img/expressjs.svg" alt=""></div>
+                    <div class="column"><img src="img/mongodb.svg" alt=""></div>
+                </div>
+                
             </div>
         </div>
         <div class="contact" id="contact">
@@ -259,95 +285,9 @@
             
         </div>
     </div>
-    <script>
-        let about=document.getElementById("about");
-        let projects=document.getElementById("projects");
-        let skills=document.getElementById("skills");
-        let contact=document.getElementById("contact");
-        let aboutLink=document.getElementById("aboutLink");
-        let projectsLink=document.getElementById("projectsLink");
-        let skillsLink=document.getElementById("skillsLink");
-        let contactLink=document.getElementById("contactLink");
-        let social=document.getElementById("social");
-        let h1=document.getElementById("h1");
-        let skillsHeadding=document.getElementById("skillsHeadding");
-        
-        aboutLink.addEventListener("click", showAbout);
-        projectsLink.addEventListener("click", showProjects);
-        skillsLink.addEventListener("click", showskills);
-        contactLink.addEventListener("click", showContact);
-
-        document.addEventListener("DOMContentLoaded", function() {
-            moveSocial();
-        });
-
-        function moveH1(){
-            h1.classList.remove('h1');
-            void h1.offsetWidth;
-            h1.classList.add('h1')
-        }
-        function moveSkillsHeadding(){
-            skillsHeadding.classList.remove('h1');
-            void h1.offsetWidth;
-            skillsHeadding.classList.add("h1");
-        }
-        function moveSocial(){
-            social.classList.remove('slide-animation');
-            void social.offsetWidth;
-            social.classList.add('slide-animation');
-        }
-        function showAbout(){
-            about.style.display="block";
-            projects.style.display="none";
-            skills.style.display="none";
-            contact.style.display="none";
-            aboutLink.style.paddingBottom="10px";
-            aboutLink.style.borderBottom="1px solid #e8bcf0";
-            projectsLink.style.borderBottom="0px";
-            contactLink.style.borderBottom="0px";
-            skillsLink.style.borderBottom="0px";
-            moveSocial();
-        }
-        function showProjects(){
-            about.style.display="none";
-            projects.style.display="block";
-            skills.style.display="none";
-            contact.style.display="none";
-            projectsLink.style.paddingBottom="10px";
-            projectsLink.style.borderBottom="1px solid #e8bcf0";
-            aboutLink.style.borderBottom="0px";
-            skillsLink.style.borderBottom="0px";
-            contactLink.style.borderBottom="0px";
-            moveSocial();
-            moveH1();
-        }
-        function showskills(){
-            about.style.display="none";
-            projects.style.display="none";
-            skills.style.display="block";
-            contact.style.display="none";
-            skillsLink.style.paddingBottom="10px";
-            skillsLink.style.borderBottom="1px solid #e8bcf0";
-           aboutLink.style.borderBottom="0px";
-            projectsLink.style.borderBottom="0px";
-            contactLink.style.borderBottom="0px";
-            moveSocial();
-            moveSkillsHeadding();
-        }
-        function showContact(){
-            about.style.display="none";
-            projects.style.display="none";
-            skills.style.display="none";
-            contact.style.display="block";
-            contactLink.style.paddingBottom="10px";
-            contactLink.style.borderBottom="1px solid #e8bcf0";
-            aboutLink.style.borderBottom="0px";
-            skillsLink.style.borderBottom="0px";
-            projectsLink.style.borderBottom="0px";
-            moveSocial();
-        }
-        
-       
-    </script>
+    <script src="script/pages.js"></script>
+    <script src="script/social.js"></script>
+    <script src="script/arrow.js"></script>
+    <script src="script/headding.js"></script>
 </body>
 </html>
