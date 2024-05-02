@@ -10,7 +10,18 @@
     font-style: normal;
     /* Specify font style if needed */
 }
-
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat/Montserrat-VariableFont_wght.ttf') format('woff2'),
+        /* Modern Browsers */
+        url('../font/Montserrat/Montserrat-VariableFont_wght.ttf') format('woff');
+    /* Legacy Browsers */
+    /* Add additional font formats if necessary */
+    font-weight: normal;
+    /* Specify font weight if needed */
+    font-style: normal;
+    /* Specify font style if needed */
+}
 @font-face {
     font-family: 'nelphim';
     src: url('../font/Nelphim-Font/Nephilm.otf') format('woff2'),
@@ -31,17 +42,16 @@ body {
     background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%);
     color: white;
     font-size: 13px;
-    font-family: 'nelphim', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 /* Navbar section */
 
-.navBar {
-    margin: 30px 100px;
 
+.navbar .container{
+    gap: 550px;
 }
-
 .logo {
     float: left;
     font-weight: 900;
@@ -54,23 +64,21 @@ body {
     color: white;
 }
 
-.menu {
-    float: right;
-}
 
-.menu ul li {
+
+.menu li {
     list-style-type: none;
     display: inline;
     padding-left: 90px;
 }
 
-.menu ul li a {
+.menu a {
     color: white;
     text-decoration: none;
     cursor: pointer;
 }
 
-.menu ul li a:hover {
+.menu a:hover {
     color: gray;
 }
 /* Content section */
@@ -165,7 +173,7 @@ body {
     box-shadow: 10px 6px 10px rgba(172, 171, 171, 0.441)
 }
 
-.about .certificates h2 {
+.about .certificates h3 {
     margin-bottom: 35px;
 }
 
@@ -174,23 +182,48 @@ body {
     gap: 3rem;
     margin: 0 80px;
 }
+.about .certificates .modal-content{
+    background-color: rgba(106, 103, 103, 0.21);
+    width: 1000px;
+    height: 600px;
+   
+}
+.about .certificates .modal-content img{
+    width: 700px;
+    margin-left: 130px;
+}
+.btn-close{
+    /* --bs-btn-close-bg: url('../img/x.png'); */
+    background: transparent url('../img/x.svg') center / 1.8em auto no-repeat;
+}
+.about .certificates .modal-header{
+   border: none;
+}
+.about .certificates .modal-dialog{
+    margin-left: 255px;
+}
+.about .certificates .modal-title{
+    text-align: center;
+    color: #e8bcf0;
+}
+  
 /* projects */
-.projects .row {
+.projects .row{
     display: grid;
     grid-template-columns: 17rem 17rem 17rem 17rem;
     gap: 10px;
-    margin: 30px 150px;
+    margin: 40px 150px 0px 150px;
 }
 .h1{
     animation: slideRight 2s forwards;
 }
-.projects .headding h1{
+.projects .headding h3{
     position: absolute;
    left: 80px;
    top: 180px;
    writing-mode: vertical-rl;
    transform: rotate(180deg);
-   font-size: 50px;
+   /* font-size: 50px; */
 }
 
 @keyframes slideRight {
@@ -208,7 +241,7 @@ body {
     width: 210px;
 }
 .projects .card {
-    width: 210px;
+    width: 230px;
     border-radius: 10px;
     border: 1px solid gray;
     background-color: rgba(255, 255, 255, 0.2);
@@ -220,36 +253,54 @@ body {
     text-decoration: none;
 }
 .projects .card:hover {
-    width: 220px;
+    width: 231px;
     box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.441)
 }
 .projects .card:hover .card-img{
-    width: 220px;
-    height: 187px;
+    width: 230px;
+    height: 190px;
 }
 
 .projects .card .card-img {
-    width: 210px;
-    height: 177px;
+    width: 229px;
+    height: 190px;
     border-radius: 10px 10px 0 0;
 }
-
-.projects .card-content {
+.projects .card .card-body{
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+}
+.projects .card .card-body img {
+    width: 25px;
+}
+.projects .card .card-body h6{
+    font-size: 14px;
     padding: 0 10px;
 }
-
-.projects .card-content img {
-    width: 20px;
+.projects .menus ul{
+    display:flex;
+    gap: 10rem;
+    justify-content: center;
+    margin-top: -12px;
 }
-
+.projects .menus ul li{
+    list-style: none;
+}
+.projects .menus ul li a{
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+.projects .menus ul li a:hover{
+    color: gray;
+}
+#uiuxProjects, #webProjects{
+    display: none;
+}
 /* social icons */
 .skills, .projects{
             display: none;
         }
-.social {
+.socialIcons {
     position: absolute;
     right: 0;
     margin-right: 20px;
@@ -273,11 +324,11 @@ body {
     }
 }
 
-.social .row .col {
+.socialIcons .roww .coll {
     padding: 25px 0;
 }
 
-.social img:hover {
+.socialIcons img:hover {
     box-shadow: 0px 0 30px rgba(255, 255, 255, 0.5);
 }
 
@@ -305,23 +356,23 @@ body {
     gap: 1rem;
     margin-top: 50px;
 }
-.services .row .col{
+.services .row .column{
     border: 1px solid #685b7d;
-    width: 270px;
+    width: 350px;
     padding: 20px;
     border-radius: 5px;
     font-size: 12px;
     background-color: rgba(0, 0, 0, 0.203);
     text-align: center;
-    height: 167px;
+    height: 200px;
 }
-.services .row .col .rowSpan{
+.services .row .column .rowSpan{
     display: none;
     margin-top: 20px;
     flex-wrap: wrap;
     gap: 8px;
 }
-.services .row .col .rowSpan span{
+.services .row .column .rowSpan span{
     background-color: #e8bcf0;
     padding: 5px 15px;
     color: #3C3448;
@@ -330,8 +381,7 @@ body {
 }
 
 .services .arrow, .services .arrow2, .services .arrow1{
-    margin-bottom: -20px;
-    padding: 15px 0;
+    padding: 10px 0;
     cursor: pointer;
 }
 .services .rowSkills{
@@ -347,28 +397,37 @@ body {
     transform: rotate(180deg);
 }
 /* Contact */
-.contact .row{
+.contact .rows{
     display: flex;
     gap: 5rem;
     padding: 0 100px;
 }
-.contact .row .first{
+.contact .rows .first{
     padding-top: 30px;
 }
 .contact .first h1{
     font-size: 50px;
     text-align: center;
 }
-.contact .row .col .row{
+.contact .first img{
+   width: 20px;
+}
+.contact .first .img{
+    width: 15px;
+}
+.contact .first .col {
+    flex: 0 0 0%;
+}
+.contact .rows .col .rows{
     display: flex;
     gap: 10px;
 }
-.contact .row .col .second{
+.contact .rows .col .second{
     display: flex;
     gap: 1rem;
     padding: 0 100px;
 }
-.contact .form .row{
+.contact .form .rows{
     flex-direction: column;
     gap: 1rem;
     margin-top: 10px;
@@ -389,7 +448,7 @@ body {
     background-color: transparent;
     border: 1px solid #685b7d;
     padding: 10px 8px;
-    width: 185px;
+    width: 190px;
     border-radius: 5px;
     
 }

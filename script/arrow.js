@@ -18,7 +18,7 @@ function showSpan(){
     if(rowSpanDisplayStyle === "none"){
         rowSpan.style.display="flex";
         arrow.classList.add('rotate')
-        secondCol.style.height="270px";
+        secondCol.style.height="300px";
         
     }
     else{
@@ -33,7 +33,7 @@ function showSpan1(){
     if(rowSpanDisplayStyle === "none"){
         rowSpan1.style.display="flex";
         arrow1.classList.add('rotate');
-        firstCol.style.height="270px";
+        firstCol.style.height="300px";
     }
     else{
         rowSpan1.style.display="none";
@@ -47,7 +47,7 @@ function showSpan2(){
     if(rowSpanDisplayStyle === "none"){
         rowSpan2.style.display="flex";
         arrow2.classList.add('rotate');
-        thirdCol.style.height="200px";
+        thirdCol.style.height="230px";
     }
     else{
         rowSpan2.style.display="none";
