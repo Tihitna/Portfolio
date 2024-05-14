@@ -585,7 +585,7 @@ body {
     background-color: #e8bcf0;
     color: #3C3448;
 }
-@media only screen and (min-width: 270px) and (max-width: 414px) {
+@media only screen and (min-width: 300px) and (max-width: 414px) {
     /* navbar */
     .navbar .container{
         display: inline;
