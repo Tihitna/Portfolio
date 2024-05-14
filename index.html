@@ -22,62 +22,82 @@
             </button>
             <div class="menu collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <li class="nav-item"><a id="aboutLink" class="nav-link">About</a></li>
-                    <li class="nav-item"><a id="projectsLink" class="nav-link">Projects</a></li>
-                    <li class="nav-item"><a id="skillsLink" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a id="contactLink" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a id="aboutLink" class="nav-link scrollTrigger">About</a></li>
+                    <li class="nav-item"><a id="projectsLink" class="nav-link scrollTrigger">Projects</a></li>
+                    <li class="nav-item"><a id="skillsLink" class="nav-link scrollTrigger">Services</a></li>
+                    <li class="nav-item"><a id="contactLink" class="nav-link scrollTrigger">Contact</a></li>
                 </div>
             </div>
         </div>
     </nav>
     <div class="content">
         <div class="about" id="about">
-            <div class="row">
-                <div class="col first">
-                    <p>I am Tihitna Sete Abebe from Ethiopia.</p>
-                    <p>Full stack web developer with with html, css, js and react.js front end experience, node.js,
+            <div class="aboutRow">
+                <div class="first">
+                    <p>I am Tihitna Sete Abebe from Ethiopia.<br><br>
+                        Full stack web developer with with html, css, js and react.js front end experience, node.js,
                         express.js, Mongo DB and mysql back end experience.
                         I have bachlors degree in Electrical and computer engineering stream of computer.</p>
                     <a href="file/resume.pdf" download="resume.pdf">Download Resume</a>
                 </div>
-                <div class="col second">
+                <div class="aboutCol second">
                     <img src="img/me.jpg" alt="my image">
                 </div>
             </div>
             <div class="certificates">
                 <h3>Certificates & Awards</h3>
-                <div class="row">
-                    <div class="col-md-2"><img src="img/js.png" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            alt="3" title="js beginner certification from skillup" data-img-src="img/js.png"></div>
-                    
-                    <div class="col-md-2"><img src="img/siltawi.png" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            alt="3" title="Web development tranining completion certificate from siltawi" data-img-src="img/siltawi.png"></div>
-                    <div class="col-md-2"><img src="img/flutter.png" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            alt="3" title="introduction to flutter certificate from skillup" data-img-src="img/flutter.png"></div>
-                    <div class="col-md-2"><img src="img/python.jpg" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            alt="3" title="python certificate from testdome" data-img-src="img/python.jpg"></div>
-                    <div class="col-md-2"><img src="img/siltawi.png" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            alt="3" title="Web development tranining completion certificate from siltawi" data-img-src="img/siltawi.png"></div>
+                <div class="slide">
+                    <div class="images">
+                        <img src="img/js.png" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="3"
+                            title="js beginner certification from skillup" data-img-src="img/js.png">
+                        <img src="img/siltawi.png" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="3"
+                            title="Web development tranining completion certificate from siltawi"
+                            data-img-src="img/siltawi.png">
+                        <img src="img/flutter.png" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="3"
+                            title="introduction to flutter certificate from skillup" data-img-src="img/flutter.png">
+                        <img src="img/python.jpg" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="3"
+                            title="python certificate from testdome" data-img-src="img/python.jpg">
+                        <img src="img/siltawi.png" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="3"
+                            title="Web development tranining completion certificate from siltawi"
+                            data-img-src="img/siltawi.png">
+                        <img src="img/python.jpg" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="3"
+                            title="python certificate from testdome" data-img-src="img/python.jpg">
+                    </div>
+                    <div class="images">
+                        <img src="img/js.png" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="3"
+                            title="js beginner certification from skillup" data-img-src="img/js.png">
+                        <img src="img/siltawi.png" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="3"
+                            title="Web development tranining completion certificate from siltawi"
+                            data-img-src="img/siltawi.png">
+                        <img src="img/flutter.png" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="3"
+                            title="introduction to flutter certificate from skillup" data-img-src="img/flutter.png">
+                        <img src="img/python.jpg" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="3"
+                            title="python certificate from testdome" data-img-src="img/python.jpg">
+                        <img src="img/siltawi.png" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="3"
+                            title="Web development tranining completion certificate from siltawi"
+                            data-img-src="img/siltawi.png">
+                        <img src="img/python.jpg" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="3"
+                            title="python certificate from testdome" data-img-src="img/python.jpg">
+                    </div>
 
-                    <!-- Modal -->
-                    <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel"></h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <img src="" id="modalIMG" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            alt="3" title="js beginner certification from skillup">
-                                </div>
+
+                </div>
+                <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="" id="modalIMG" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="3"
+                                    title="js beginner certification from skillup">
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
         <div class="projects" id="projects">
@@ -91,7 +111,7 @@
             <div class="headding">
                 <h3 id="h1">Recent Works</h3>
             </div>
-            <div class="row" id="allProjects">       
+            <div class="row" id="allProjects">
                 <div class="col">
                     <a href="https://sostenuto-nozzles.000webhostapp.com/" target="_blank">
                         <div class="card">
@@ -161,7 +181,7 @@
 
 
             </div>
-            <div class="row" id="uiuxProjects">       
+            <div class="row" id="uiuxProjects">
                 <div class="col">
                     <a href="https://sostenuto-nozzles.000webhostapp.com/" target="_blank">
                         <div class="card">
@@ -209,7 +229,7 @@
 
 
             </div>
-            <div class="row" id="webProjects">       
+            <div class="row" id="webProjects">
                 <div class="col">
                     <a href="https://sostenuto-nozzles.000webhostapp.com/" target="_blank">
                         <div class="card">
@@ -316,35 +336,50 @@
                 </div><br>
                 <div class="rowSkills">
                     <div class="column">
-                        <h6>Front-End Development:</h6>
+                        <h6>Front-end Development:</h6>
                     </div>
-                    <div class="column">
-                        <img src="img/reactjs.svg" alt="">
-                    </div>
-                    <div class="column">
-                        <img src="img/css.svg" alt="">
-                    </div>
-                    <div class="column">
-                        <img src="img/html.svg" alt="">
-                    </div>
-                    <div class="column">
-                        <img src="img/js.svg" alt="">
+                    <div class="apps">
+                        <div class="images">
+                            <img src="img/reactjs.svg" alt="">
+                            <img src="img/css.svg" alt="">
+                            <img src="img/html.svg" alt="">
+                            <img src="img/js.svg" alt="">
+                        </div>
+                        <div class="images">
+                            <img src="img/reactjs.svg" alt="">
+                            <img src="img/css.svg" alt="">
+                            <img src="img/html.svg" alt="">
+                            <img src="img/js.svg" alt="">
+                        </div>
+                        <div class="images">
+                            <img src="img/reactjs.svg" alt="">
+                            <img src="img/css.svg" alt="">
+                            <img src="img/html.svg" alt="">
+                            <img src="img/js.svg" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="rowSkills">
                     <div class="column">
-                        <h6>Back-End Development:</h6>
+                        <h6>Back-end Development:</h6>
                     </div>
-                    <div class="column">
-                        <img src="img/php.svg" alt="">
+                    <div class="apps">
+                        <div class="images">
+                            <img src="img/node.svg" alt="">
+                            <img src="img/mysql.svg" alt="">
+                            <img src="img/python.svg" alt="">
+                            <img src="img/expressjs.svg" alt="">
+                            <img src="img/mongodb.svg" alt="">
+                        </div>
+                        <div class="images">
+                            <img src="img/node.svg" alt="">
+                            <img src="img/mysql.svg" alt="">
+                            <img src="img/python.svg" alt="">
+                            <img src="img/expressjs.svg" alt="">
+                            <img src="img/mongodb.svg" alt="">
+                        </div>
                     </div>
-                    <div class="column">
-                        <img src="img/node.svg" alt="">
-                    </div>
-                    <div class="column"><img src="img/mysql.svg" alt=""></div>
-                    <div class="column"><img src="img/python.svg" alt=""></div>
-                    <div class="column"><img src="img/expressjs.svg" alt=""></div>
-                    <div class="column"><img src="img/mongodb.svg" alt=""></div>
+
                 </div>
 
             </div>
@@ -357,7 +392,7 @@
                         <div class="col-md-1">
                             <img src="img/email.svg" class="img" alt="">
                         </div>
-                        <div class="col">
+                        <div class="col-md-2">
                             <p>tihitnasete58@gmail.com</p>
                         </div>
 
@@ -366,7 +401,7 @@
                         <div class="col-md-1">
                             <img src="img/phone.svg" alt="">
                         </div>
-                        <div class="col">
+                        <div class="col-md-2">
                             <p>+251944354184</p>
                         </div>
                     </div>
@@ -435,6 +470,7 @@
 
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
@@ -443,44 +479,14 @@
     <script src="script/arrow.js"></script>
     <script src="script/headding.js"></script>
     <script src="script/modal.js"></script>
+    <script src="script/projects.js"></script>
     <script>
-        let uiux=document.getElementById("uiux");
-        let all=document.getElementById("all");
-        let web=document.getElementById("web");
-        let allProjects=document.getElementById("allProjects");
-        let uiuxProjects= document.getElementById("uiuxProjects");
-        let webProjects= document.getElementById("webProjects");
-
-        uiux.addEventListener("click", displayUiUxProjects);
-        all.addEventListener("click", displayAllProjects);
-        web.addEventListener("click", displayWebProjects);
-
-        function displayUiUxProjects(){
-            allProjects.style.display="none";
-            webProjects.style.display="none";
-            uiuxProjects.style.display="grid";
-            uiux.style.color="gray";
-            web.style.color="white";
-            all.style.color="white";
-
-        }
-        function displayAllProjects(){
-            webProjects.style.display="none";
-            uiuxProjects.style.display="none";
-            allProjects.style.display="grid";
-            all.style.color="gray";
-            web.style.color="white";
-            uiux.style.color="white";
-        }
-        function displayWebProjects(){
-            uiuxProjects.style.display="none";
-            webProjects.style.display="grid";
-            allProjects.style.display="none";
-            web.style.color="gray";
-            all.style.color="white";
-            uiux.style.color="white";
-        }
+        $('.scrollTrigger').click(function () {
+            $('.navbar-collapse').collapse("hide");
+        });
     </script>
+    
+
 
 </body>
 
