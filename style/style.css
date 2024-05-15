@@ -617,7 +617,7 @@ body {
     }
    
     .navbar-collapse{
-        width: 100%;
+        width: 100%!important;
         background-color:#2a2a2a
         /* justify-content: center; */
     }
@@ -759,11 +759,14 @@ body {
     /* social Icons */
     .socialIcons {
         margin-right: 5px;
+        top: 90px;
     
     }
     .socialIcons img{
         width: 17px;
+        
     }
+    
     /* contact */
     .contact .rows .first{
         padding: 0;
