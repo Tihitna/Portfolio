@@ -1,0 +1,351 @@
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Navbar */
+    .container{
+        max-width: 100%;
+       }
+    .collapse .logo{
+        padding: 7px 20px;
+    }
+    .logo a{
+        font-size: 20px;
+    }
+    .collapse .logo .btn-close{    
+        background:  url(../img/close.svg) center / 0.6em auto no-repeat;
+    }
+     /* about */
+.about .aboutRow {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0;
+    margin: 0 0px;
+} 
+.about .second img {
+        border-radius: 50px 20px 50px 20px;
+        width: 150px;
+    }
+    .about .second .second-container{
+        right: calc((100vw - 190px)/2);
+        width: 190px;
+        
+    }
+    .about .aboutRow .first p{
+        margin-bottom: 25px;
+        padding: 0 13px;
+    }
+    .about .aboutRow .first a {
+        padding:13px 20px;
+    }
+    .about .certificates{
+        margin: 50px 20px;
+    }
+    .about .certificates .modal-dialog{
+        margin: auto;
+    }
+    .about .certificates .modal-content {
+        width: 300px;
+        height: 330px;
+        padding: 0;
+        margin: auto;
+    }
+    
+    .about .certificates .modal-content img {
+        width: 280px;
+        padding: 0;
+        margin: 0;
+    }
+    /* services */
+    .services .row{
+        margin-top: 10px;
+        gap: 10px;
+    }
+    .services .row .column h4{
+        font-size: 14px;
+        margin-top: -10px;
+    }
+    .services .row .column p{
+    font-size: 12px;
+}
+.services .rowSkills {
+    padding: 0 50px;
+    margin-top: 10px;
+}
+
+.services .rowSkills .apps img{
+    width: 40px;
+}
+    /* social Icons */
+    .socialIcons {
+        margin-right: 15px;
+        top: 150px;
+    
+    }
+    .socialIcons img{
+        width: 20px;
+        
+    }
+    /* contact */
+    .contact .first h1{
+        font-size: 24px;
+    }
+    .contact .rows .col .rows {
+        gap: 10px;
+    }
+    
+.contact input, .contact textarea, .contact input[type="text"]{
+    width: 300px;
+    padding: 10px;
+}
+.contact textarea{
+    height: 100px;
+}
+
+.contact .form .rows{
+    margin-top: 10px;
+}
+
+
+.contact button{
+    font-size: 12px;
+    width: 140px;
+    margin-top: 2px;
+    padding: 10px 15px;
+}
+/* projects */
+
+.projects .menus ul {
+    gap: 3.3rem;
+    margin-top: 10px;
+}
+.projects .row {
+    grid-template-columns: 8.3rem 8.3rem 8.3rem;
+    gap: 8px;
+    margin-top: 20px;
+    margin: 0;
+    justify-content: center;
+}
+}
+@media only screen and (min-width: 481px) and (max-width: 550px) {
+    
+   /* about */
+   .about .second img {
+    width: 190px;
+}
+    .about .certificates img{
+        width: 170px;
+    }
+    .about .certificates .slide {
+        width: 475px; 
+    }
+    .about .certificates .modal-content {
+        width: 450px;
+        height: 400px;
+    }
+    
+    .about .certificates .modal-content img {
+        width: 380px;
+    }
+/* contact */
+.contact input, .contact textarea, .contact input[type="text"]{
+    width: 370px;
+    padding: 10px;
+}
+.contact button{
+    width: 170px;
+    padding: 11px 20px;
+}
+/* services */
+
+.services .row .column{
+    width: 380px;
+    height: 160px;
+}
+.services .row .column p{
+    margin-bottom: 7px;
+}
+
+.services .row .column .mb-3{
+    width: 32px;
+}
+
+
+.services .rowSkills .apps {
+    width: 475px;
+    
+}
+/* projects */
+.projects .row {
+    grid-template-columns: 11rem 11rem;
+    gap: 8px;
+    margin-top: 20px;
+    margin: 0;
+    justify-content: center;
+}
+
+.projects .card {
+    width: 166px;
+    height: 217px;
+}
+.projects .card .card-img {
+    width: 165px;
+    height: 145px;
+}
+.projects .card:hover {
+    width: 166px;
+}
+
+.projects .card:hover .card-img {
+    width: 165px;
+    height: 145px;
+}
+}
+@media only screen and (min-width: 551px) and (max-width: 620px) {  
+    /* about */
+    .about .aboutRow .first{
+        padding: 0 80px;
+    }
+    .about .second img {
+        width: 190px;
+    }
+    .about .certificates img{
+        width: 160px;
+    }
+    .about .certificates .slide {
+        width: 545px; 
+    }
+    .about .certificates .modal-content {
+        width: 530px;
+        height: 380px;
+    }
+    
+    .about .certificates .modal-content img {
+        width: 370px;
+    }
+
+/* contact */
+.contact input, .contact textarea, .contact input[type="text"]{
+    width: 400px;
+    padding: 11px;
+}
+.contact button{
+    width: 175px;
+    padding: 12px 20px;
+}
+/* services */
+.services .row .column{
+    width: 385px;
+    height: 165px;
+}
+.services .row .column h4{
+    margin-top: 0px;
+}
+.services .row .column p{
+    margin-bottom: 0;
+}
+.services .row .column .mb-3{
+    width: 33px;
+}
+.services .rowSkills .apps{
+    width: calc(100vw - 100px);
+}
+/* projects */
+
+.projects .row {
+    grid-template-columns: 9.2rem 9.2rem 9.2rem;
+    gap: 20px;
+    margin-top: 25px;
+    margin-left: -20px;
+}
+.projects .card {
+    width: 151px;
+    height: 197px;
+}
+.projects .card .card-img {
+    width: 150px;
+    height: 135px;
+}
+.projects .card:hover {
+    width: 151px;
+}
+
+.projects .card:hover .card-img {
+    width: 150px;
+    height: 135px;
+}
+}
+@media only screen and (min-width: 621px) and (max-width: 768px) {  
+ 
+    /* about */
+    .about .aboutRow .first{
+        padding: 0 80px;
+    }
+    .about .second img {
+        width: 190px;
+    }
+    .about .certificates img{
+        width: 180px;
+    }
+    .about .certificates .slide {
+        width: 610px; 
+    }
+    .about .certificates .modal-content {
+
+        width: 500px;
+        height: 400px;
+    }
+    
+    .about .certificates .modal-content img {
+        width: 400px;
+    }
+
+/* contact */
+.contact input, .contact textarea, .contact input[type="text"]{
+    width: 450px;
+    padding: 11px;
+}
+.contact button{
+    width: 178px;
+    padding: 13px 23px;
+}
+/* services */
+.services .row .column{
+    width: 390px;
+    height: 170px;
+}
+.services .row .column p{
+    margin-bottom: 15px;
+}
+.services .row .column .mb-3{
+    width: 35px;
+}
+.services .rowSkills .apps{
+    width: calc(100vw - 100px);
+}
+/* projects */
+.projects .row {
+    grid-template-columns: 9.3rem 9.3rem 9.3rem;
+    gap: 25px;
+    margin-top: 25px;
+    margin-left: -20px;
+}
+.projects .card {
+    width: 161px;
+    height: 207px;
+}
+.projects .card .card-img {
+    width: 160px;
+    height: 145px;
+}
+.projects .card:hover {
+    width: 161px;
+}
+
+.projects .card:hover .card-img {
+    width: 160px;
+    height: 145px;
+}
+}
+@media only screen and (min-width: 700px) and (max-width: 768px){
+    .about .certificates .slide {
+        width: 690px; 
+    }
+}

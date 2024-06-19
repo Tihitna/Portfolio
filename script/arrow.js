@@ -7,6 +7,7 @@ let rowSpan2 = document.getElementById("rowSpan2");
 let firstCol = document.getElementById("firstCol");
 let secondCol = document.getElementById("secondCol");
 let thirdCol = document.getElementById("thirdCol");
+const screenWidth=window.innerWidth;
 
 
 arrow.addEventListener("click", showSpan);
@@ -17,8 +18,35 @@ function showSpan(){
     var rowSpanDisplayStyle = window.getComputedStyle(rowSpan).display;
     if(rowSpanDisplayStyle === "none"){
         rowSpan.style.display="flex";
-        arrow.classList.add('rotate')
-        secondCol.style.height="300px";
+        arrow.classList.add('rotate');
+        if(screenWidth <=992 && screenWidth >=769 ){
+            secondCol.style.height="280px";
+            
+        }
+        else if(screenWidth <=400 && screenWidth >=310){
+            secondCol.style.height="270px";
+        }
+        else if(screenWidth <=480 && screenWidth >=401){
+            secondCol.style.height="240px";
+        }
+        else if(screenWidth <=550 && screenWidth >=481){
+            secondCol.style.height="280px";
+        }
+        else if(screenWidth <=620 && screenWidth >=551){
+            secondCol.style.height="285px";
+        }
+        else if(screenWidth <=768 && screenWidth >=621){
+            secondCol.style.height="280px";
+        }
+        else if(screenWidth <=1124 && screenWidth >=993){
+            secondCol.style.height="335px";
+        }
+        else if(screenWidth <=2100 && screenWidth >=1881){
+            secondCol.style.height="270px";
+        }
+        else{
+            secondCol.style.height="295px";
+        }
         
     }
     else{
@@ -30,10 +58,40 @@ function showSpan(){
 }
 function showSpan1(){
     var rowSpanDisplayStyle = window.getComputedStyle(rowSpan1).display;
+    
     if(rowSpanDisplayStyle === "none"){
         rowSpan1.style.display="flex";
         arrow1.classList.add('rotate');
-        firstCol.style.height="300px";
+        console.log(screenWidth)
+        if(screenWidth <=992 && screenWidth >=769 ){
+            firstCol.style.height="280px";
+            
+        }
+        else if(screenWidth <=450 && screenWidth >=310){
+            firstCol.style.height="270px";
+        }
+        else if(screenWidth <=480 && screenWidth >=451){
+            firstCol.style.height="240px";
+        }
+        else if(screenWidth <=550 && screenWidth >=481){
+            firstCol.style.height="280px";
+        }
+        else if(screenWidth <=620 && screenWidth >=551){
+            firstCol.style.height="285px";
+        }
+        else if(screenWidth <=768 && screenWidth >=621){
+            firstCol.style.height="280px";
+        }
+        else if(screenWidth <=1150 && screenWidth >=993){
+            firstCol.style.height="335px";
+        }
+        else if(screenWidth <=2100 && screenWidth >=1881){
+            firstCol.style.height="270px";
+        }
+        else {
+            firstCol.style.height="295px";
+        }
+        
     }
     else{
         rowSpan1.style.display="none";
@@ -47,7 +105,25 @@ function showSpan2(){
     if(rowSpanDisplayStyle === "none"){
         rowSpan2.style.display="flex";
         arrow2.classList.add('rotate');
-        thirdCol.style.height="230px";
+        if(screenWidth <=992 && screenWidth >=769 ){
+            thirdCol.style.height="210px";
+            
+        }
+        else if(screenWidth <=480 && screenWidth >=310){
+            thirdCol.style.height="175px";
+        }
+        else if(screenWidth <=550 && screenWidth >=481){
+            thirdCol.style.height="210px";
+        }
+        else if(screenWidth <=620 && screenWidth >=551){
+            thirdCol.style.height="215px";
+        }
+        else if(screenWidth <=768 && screenWidth >=621){
+            thirdCol.style.height="210px";
+        }
+        else{
+            thirdCol.style.height="230px";
+        }
     }
     else{
         rowSpan2.style.display="none";

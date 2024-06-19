@@ -14,52 +14,45 @@
 @font-face {
     font-family: 'Montserrat';
     src: url('../font/Montserrat/Montserrat-VariableFont_wght.ttf') format('woff2'),
-        /* Modern Browsers */
         url('../font/Montserrat/Montserrat-VariableFont_wght.ttf') format('woff');
-    /* Legacy Browsers */
-    /* Add additional font formats if necessary */
     font-weight: normal;
-    /* Specify font weight if needed */
     font-style: normal;
-    /* Specify font style if needed */
 }
 
 @font-face {
     font-family: 'nelphim';
     src: url('../font/Nelphim-Font/Nephilm.otf') format('woff2'),
-        /* Modern Browsers */
         url('../font/Nelphim-Font/Nephilm.otf') format('woff');
-    /* Legacy Browsers */
-    /* Add additional font formats if necessary */
     font-weight: normal;
-    /* Specify font weight if needed */
     font-style: normal;
-    /* Specify font style if needed */
 }
-
+:root{
+    --slider:calc(100vw - 75px);
+}
 body {
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
     background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%);
     color: white;
     font-size: 13px;
     font-family: 'Montserrat', sans-serif;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 /* Navbar section */
 
 
 .navbar .container {
-    gap: 550px;
+    gap: calc(100vw - 900px);
+    margin-left: 50px;
 }
 
 .logo {
     float: left;
     font-weight: 900;
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'Ayrella', sans-serif;
 }
 
@@ -137,9 +130,7 @@ body {
 
     to {
         transform: translateX(0);
-        /* Final position */
         opacity: 1;
-        /* Fully visible */
     }
 }
 
@@ -147,10 +138,15 @@ body {
     border-bottom: 1px solid #e8bcf0;
     padding-bottom: 10px;
 }
-
+.about .second .second-container{
+    position: absolute;
+    right: 310px;
+    width: 400px;
+    
+}
 .about .second img {
-    border-radius: 100px 20px 100px 20px;
-    width: 300px;
+    border-radius: 90% ; 
+    width: 400px;
     animation: slideInAnotherway 2s forwards;
 }
 
@@ -167,7 +163,9 @@ body {
 }
 
 .about .certificates {
-    margin-top: 50px;
+    margin-top: 10px;
+    display: grid;
+    place-items: center;
 }
 
 .about .certificates img {
@@ -181,16 +179,19 @@ body {
     box-shadow: 10px 6px 10px rgba(172, 171, 171, 0.441)
 }
 
-.about .certificates h3 {
+.about .certificates h3{
+    justify-self: start;
+    padding:0 70px;
     margin-bottom: 35px;
 }
 
-
 .about .certificates .slide {
-    
+      justify-content: center;
+    text-align: center;
     white-space: nowrap;
-    width: 1340px; 
+    width: calc(100vw - 170px); 
     overflow: hidden;
+    margin: 0 ;
 }
 .about .certificates .slide:before, .about .certificates .slide:after{
     position: absolute;
@@ -202,7 +203,7 @@ body {
 }
 .about .certificates .slide:after{
     position: absolute;
-    right: 96px;
+    right: 68px;
    
 }
 .about .certificates .slide:hover .images{
@@ -224,7 +225,7 @@ body {
     margin: 0 10px;
 }
 .about .certificates .modal-content {
-    background-color: rgba(106, 103, 103, 0.21);
+    background-color: rgba(0, 0, 0, 0.525);;
     width: 1000px;
     height: 600px;
 
@@ -253,11 +254,16 @@ body {
 }
 
 /* projects */
+.projects{
+  display: grid;
+  place-items: center;
+}
 .projects .row {
     display: grid;
     grid-template-columns: 17rem 17rem 17rem 17rem;
     gap: 10px;
-    margin: 40px 150px 0px 150px;
+    width: 60%;
+    margin:0 calc(100vw - 1400px);
 }
 
 .h1 {
@@ -433,6 +439,7 @@ body {
     background-color: rgba(0, 0, 0, 0.203);
     text-align: center;
     height: 200px;
+    transition: height 0.3s ease;
 }
 
 .services .row .column .rowSpan {
@@ -456,17 +463,23 @@ body {
     padding: 10px 0;
     cursor: pointer;
 }
-
 .services .rowSkills {
     display: flex;
-    gap: 7rem;
+    gap: 1rem;
     margin-top: 40px;
     padding: 0 100px;
+} .services .rowSkills .appss{
+    /* margin-left:30px; */
+    margin-top: -10px;
+}
+.services .rowSkills h6{
+    text-align: right;
 }
 .services .rowSkills .apps {
     white-space: nowrap;
     overflow: hidden;
-    width: 800px;
+    width: calc(100vw - 530px);
+    margin-top: -25px;
     
 }
 .services .rowSkills .apps .images{
@@ -585,342 +598,4 @@ body {
 .contact button:hover {
     background-color: #e8bcf0;
     color: #3C3448;
-}
-@media only screen and (min-width: 320px) and (max-width: 414px) {
-    /* navbar */
-    .navbar .container{
-        display: inline;
-    }
-    .logo a{
-        font-size: 18px;
-    }
-    .logo{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        
-    }
-    .navbar-toggler{
-        float: right;
-        --bs-navbar-toggler-font-size:0.9rem;
-        border: none;
-    }
-    .navbar-toggler, .navbar-brand{
-        z-index: 0;
-    }
-    .navbar-toggler:focus{
-        box-shadow: none;
-    }
-    .navbar-toggler-icon{
-        background-image: url("../img/icons8-menu-bar.svg");
-    }
-    .navbar-toggler-icon:focus-visible{
-        outline: none;
-    }
-   
-    .navbar-collapse{
-        width: 100%!important;
-        background-color:#2a2a2a
-        /* justify-content: center; */
-    }
-    .collapse .logo{
-        display: flex;
-        margin:  10px 0;
-        padding: 0 10px;
-    }
-    .collapse .logo .btn-close{
-        padding: 0;
-        height: 15px;
-        width: 15px;
-
-        background:  url(../img/close.svg) center / 0.45em auto no-repeat;
-    }
-    /* .logo .btn-close{
-        --bs-btn-close-color: #000;
-        --bs-btn-close-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e);
-    } */
-    .menu li{
-        padding: 30px 0;
-        text-align: center;
-    }
-    .content {
-    margin: 0px;
-    float: left;
-    width: 100%;
-}
-/* about */
-    .about .aboutRow {
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 0;
-        margin: 0 0px;
-    }
-    .about .aboutRow .first{
-        padding: 0 32px;
-        margin: 0px;
-        text-align: center;
-    }
-    .about .aboutRow .first p{
-        font-size: 12px;
-        line-height: 20px;
-        margin-bottom: 20px;
-    }
-    .about .second{
-        text-align: center;
-        margin-bottom: 10px;
-    }
-    .about .second img {
-        width: 120px;
-        border-radius: 100px;
-    }
-    @keyframes slideInAnotherway {
-        from {
-            transform: translateY(-100%);
-            opacity: 0;
-        }
-    
-        to {
-            transform: translate(0);
-            opacity: 1;
-        }
-    }
-    .about .aboutRow .first a {
-        padding:10px 15px;
-        font-size: 12px;
-        border-radius: 50px;
-        align-content: center;
-    }
-    .about .certificates{
-        margin-top: 30px;
-    }
-    
-    .about .certificates h3{
-        font-size: 14px;
-        font-weight: 900;
-        padding-left: 30px;
-        display: block;
-    }
-    .about .certificates img{
-        width: 120px;
-    }
-   
-
-
-    .about .certificates .slide {
-        margin: 0 auto;
-        white-space: nowrap;
-        width: 300px; 
-        overflow: hidden;
-    }
-    .about .certificates .slide:before, .about .certificates .slide:after{
-        width: 40px;
-        height: 85px;
-    }
-    .about .certificates .slide:after{
-        position: absolute;
-        right: 10px;
-       
-    }
-    .about .certificates .slide:hover .images{
-        animation-play-state: paused;
-    } 
-    .about .certificates .slide .images{
-        animation:imageSlider 35s linear infinite;
-        display: inline-block;
-    }
-
-    .about .certificates .modal-content {
-        width: 300px;
-        height: 330px;
-        background-color: rgba(0, 0, 0, 0.525);
-        padding: 0;
-        margin: auto;
-    }
-    
-    .about .certificates .modal-content img {
-        width: 280px;
-        padding: 0;
-        margin: 0;
-    }
-    
-    .btn-close {
-        /* --bs-btn-close-bg: url('../img/x.png'); */
-        background: transparent url('../img/x.svg') center / 1.5em auto no-repeat;
-    }
-    
-    .about .certificates .modal-dialog {
-        margin-left: 0px;
-    }
-    .about .certificates .modal-body {
-        margin: auto;
-        padding: 0;
-    }
-    .about .certificates .modal-title{
-        padding: 10px;
-        font-size: 12px;
-    }
-
-    /* social Icons */
-    .socialIcons {
-        margin-right: 5px;
-        top: 90px;
-    
-    }
-    .socialIcons img{
-        width: 17px;
-        
-    }
-    
-    /* contact */
-    .contact .rows .first{
-        padding: 0;
-        margin: auto;
-    }
-    .contact .rows{
-        flex-direction: column;
-        gap: 0;
-        padding: 0;
-    }
-    
-    .contact .rows .col .rows{
-        gap: 5px;
-    }
-    .contact .first h1{
-        font-size: 20px;
-        font-weight: 900;
-        margin-top: -15px;
-    }
-    /* .contact .first img{
-        width: 15px;
-    } */
-    .contact .rows .col .second{
-        flex-direction: column;
-        gap: 0;
-        padding: 0;
-    }
-    .contact input, .contact textarea, .contact input[type="text"]{
-        width: 250px;
-        padding: 5px;
-    }
-    .contact textarea{
-        height: 60px;
-    }
-    .contact .col {
-       margin: auto;
-    }
-    .contact .form .rows{
-        margin-top: 8px;
-    }
-    .contact .form .second .col{
-        gap:0.3rem;
-        margin-top: 8px;
-    }
-    .contact .rows .first .rows{
-        flex-direction: row;
-
-    }
-    .contact button{
-        font-size: 12px;
-        width: 130px;
-        margin-top: 8px;
-        padding: 7px 13px;
-    }
-    .contact .rows .col .rows p{
-        text-align: center!important;
-    }
-
-    /* services */
-    .services .row{
-        flex-direction: column;
-        margin-top: -13px;
-        gap: 5px;
-        align-content: center;
-        margin-bottom: -12px;
-    }
-    .services .row .column{
-        width: 230px;
-        height: 130px;
-        padding: 8px 20px;
-    }
-    .services .row .column h4{
-        font-size: 13px;
-        font-weight: 900;
-        margin-top: -13px;
-    }
-    .services .row .column p{
-        font-size: 11px;
-        margin-bottom: -7px;
-    }
-    .services .row .column img{
-        width: 13px;
-    }
-    .services .row .column .mb-3{
-        width: 22px;
-    }
-    .services .row .column .rowSpan span{
-        padding: 3px 10px;
-        font-size: 11px;
-    }
-    .services .rowSkills{
-        flex-direction: column;
-        gap: 0;
-        padding: 0 17px;
-        margin-top: 0;
-    }
-    .services .rowSkills .apps{
-        padding: 0 17px;
-    }
-    .services .rowSkills .apps img{
-        width: 30px;
-    }
-    .services .rowSkills  h6{
-        font-size: 14px;
-        font-weight: 900;
-    }
-    .services .rowSkills .apps{
-        margin-bottom: 10px;
-    }
-    .services .rowSkills .apps {
-        width: 300px;
-        
-    }
-
-    /* projects */
-    .projects .menus ul {
-        display: flex;
-        gap: 1.2rem;
-        justify-content: center;
-        margin-top: -12px;
-        padding: 0;
-    }
-    .projects .menus ul li a {
-        font-size: 12px;
-    }
-    h3{
-        display: none;
-    }
-    .projects .row {
-        display: grid;
-        grid-template-columns: 8.3rem 8.3rem;
-        gap: 7px;
-        justify-content: center;
-        margin: 0;
-        margin-top: -5px;
-    }
-    .projects .col{
-        padding: 0;
-        margin: auto;
-    }
-    .projects .card {
-        width: 131px;
-        height: 167px;
-    }
-    .projects .card .card-img {
-        width: 130px;
-        height: 105px;
-    }
-    .projects .card .card-body h6 {
-        font-size: 11px;
-        padding: 0 ;
-    }
 }

@@ -1,0 +1,535 @@
+@media only screen and (min-width:310px) and (max-width: 768px){
+  /* navbar */
+  .logo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navbar-toggler{
+    float: right;
+    --bs-navbar-toggler-font-size:0.9rem;
+    border: none;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-toggler-icon{
+    background-image: url("../img/icons8-menu-bar.svg");
+}
+.navbar-toggler-icon:focus-visible{
+    outline: none;
+}
+.navbar-collapse{
+    width: 100%!important;
+    background-color:#2a2a2a
+}
+.collapse .logo{
+    display: flex;
+    margin:  10px 0;
+    padding: 0 10px;
+}
+.collapse .logo .btn-close{
+    padding: 0;
+    height: 15px;
+    width: 15px;
+    background:  url(../img/close.svg) center / 0.45em auto no-repeat;
+}
+.navbar-brand{
+    margin: 0;
+}
+.navbar .container {
+    margin-left: 0;
+}
+.navbar-nav{
+    overflow-y: auto;
+    width: 50%;
+}
+.menu li{
+    padding: 30px 0;
+    text-align: center;
+}
+.content {
+margin: 0px;
+float: left;
+width: 100%;
+}
+.about .aboutRow .first{
+    padding: 0 32px;
+    margin: 0px;
+    text-align: center;
+}
+.about .aboutRow .first p{
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.about .second{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@keyframes slideInAnotherway {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+.about .certificates .slide:before, .about .certificates .slide:after{
+    width: 0;
+    height: 0
+}
+.about .certificates .slide:after{
+    position: absolute;
+    right: 10px;
+   
+}
+.about .certificates .modal-dialog {
+    margin-left: 0px;
+}
+.about .certificates .modal-body {
+    margin: auto;
+    padding: 0;
+}
+/* contacts */
+.contact .rows{
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+}
+.contact .rows .col .second{
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+}
+.contact .rows .first{
+    padding: 0;
+    margin: auto;
+}
+.contact .col {
+    margin: auto;
+ }
+ .contact .rows .first .rows{
+     flex-direction: row;
+ 
+ }
+ .contact .rows .col .rows p{
+    text-align: center!important;
+}
+.contact .first h1{
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: -15px;
+}
+.contact .form .second .col{
+    gap:0.3rem;
+    margin-top: 8px;
+}
+/* services */
+.services .row{
+    flex-direction: column;
+    margin-top: -13px;
+    gap: 5px;
+    align-content: center;
+    margin-bottom: -12px;
+}
+.services .rowSkills{
+    flex-direction: column;
+    gap: 0;
+    padding: 0 17px;
+    margin-top: 0;
+}
+.services .rowSkills .apps{
+    margin-top: 0;
+}
+.services .rowSkills .appss{
+    margin-top: 10px;
+}
+.services .rowSkills h6{
+    
+    text-align: start;
+}
+.services .rowSkills .appss img{
+    width: 30px;
+}
+/* projects */
+.projects h3{
+    display: none;
+}
+.projects .card .card-body h6 {
+    font-size: 11px;
+    padding: 0 ;
+}
+}
+@media only screen and (min-width:310px) and (max-width: 480px){
+    /* navbar */
+.logo a{
+    font-size: 18px;
+}
+
+/* about */
+.about .aboutRow {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0;
+    margin: 0 0px;
+}
+.about .second img {
+    width: 120px;
+    border-radius: 100px;
+}
+.about .second .second-container{
+    right: calc((100vw - 120px)/2);
+    width: 120px;
+    
+}
+.about .aboutRow .first a {
+    padding:10px 15px;
+    font-size: 12px;
+    border-radius: 50px;
+    align-content: center;
+}
+.about .certificates{
+    margin-top: 30px;
+}
+
+.about .certificates h3{
+    font-size: 14px;
+    font-weight: 900;
+    padding-left: 30px;
+    display: block;
+}
+.about .certificates img{
+    width: 120px;
+}
+
+.about .certificates .slide {
+    margin: 0 auto;
+    white-space: nowrap;
+    width: 300px; 
+    overflow: hidden;
+    justify-content: center;
+}
+
+.about .certificates .slide:hover .images{
+    animation-play-state: paused;
+} 
+.about .certificates .slide .images{
+    animation:imageSlider 35s linear infinite;
+    display: inline-block;
+}
+
+
+
+.btn-close {
+    background: transparent url('../img/x.svg') center / 1.5em auto no-repeat;
+}
+
+
+.about .certificates .modal-title{
+    padding: 10px;
+    font-size: 12px;
+}
+.about .certificates .modal-content {
+    width: 300px;
+    height: 330px;
+    background-color: rgba(0, 0, 0, 0.525);
+    padding: 0;
+    margin: auto;
+}
+
+.about .certificates .modal-content img {
+    width: 280px;
+    padding: 0;
+    margin: 0;
+}
+/* social Icons */
+.socialIcons {
+    margin-right: 5px;
+    top: 90px;
+
+}
+.socialIcons img{
+    width: 17px;
+    
+}
+/* contact */
+.contact .rows .col .rows{
+    gap: 5px;
+}
+.contact input, .contact textarea, .contact input[type="text"]{
+    width: 250px;
+    padding: 5px;
+}
+.contact textarea{
+    height: 60px;
+}
+
+.contact .form .rows{
+    margin-top: 8px;
+}
+.contact button{
+    font-size: 12px;
+    width: 130px;
+    margin-top: 8px;
+    padding: 7px 13px;
+}
+/* services */
+
+.services .row .column{
+    width: 230px;
+    height: 130px;
+    padding: 8px 20px;
+}
+.services .row .column h4{
+    font-size: 13px;
+    font-weight: 900;
+    margin-top: -13px;
+}
+.services .row .column p{
+    font-size: 11px;
+    margin-bottom: -7px;
+}
+.services .row .column .mb-3{
+    width: 22px;
+}
+.services .row .column .rowSpan span{
+    padding: 3px 10px;
+    font-size: 11px;
+}
+
+.services .rowSkills .apps{
+    padding: 0 17px;
+}
+.services .rowSkills .apps img{
+    width: 30px;
+}
+.services .rowSkills  h6{
+    font-size: 14px;
+    font-weight: 900;
+}
+.services .rowSkills .apps{
+    margin-bottom: 10px;
+}
+.services .rowSkills .apps {
+    width: 300px;
+    
+}
+
+/* projects */
+.projects .menus ul {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    margin-top: -12px;
+    padding: 0;
+}
+.projects .menus ul li a {
+    font-size: 12px;
+}
+
+.projects .row {
+    display: grid;
+    grid-template-columns: 8.3rem 8.3rem;
+    gap: 7px;
+    justify-content: center;
+    margin: 0;
+    margin-top: -5px;
+}
+.projects .col{
+    padding: 0;
+    margin: auto;
+}
+.projects .card {
+    width: 131px;
+    height: 167px;
+}
+.projects .card .card-img {
+    width: 130px;
+    height: 105px;
+}
+
+.projects .card:hover {
+    width: 131px;
+    box-shadow: 0
+}
+
+.projects .card:hover .card-img {
+    width: 130px;
+    height: 105px;
+}
+    
+}
+@media only screen and (min-width: 356px) and (max-width: 400px) {
+    
+/* about */
+
+    .about .certificates .slide {
+        width: 350px; 
+    }
+    .about .certificates .modal-content {
+        width: 310px;
+    }
+    /* services */
+    .services .rowSkills .apps {
+        width: 340px;
+        
+    }
+    /* projects */
+    
+    .projects .row {
+        grid-template-columns: 8.7rem 8.7rem;
+        gap:15px;
+    }
+    .projects .card {
+        width: 136px;
+        height: 172px;
+    }
+    .projects .card .card-img {
+        width: 135px;
+        height: 110px;
+    }
+    .projects .card:hover {
+        width: 136px;
+        box-shadow: 0
+    }
+    
+    .projects .card:hover .card-img {
+        width: 135px;
+        height: 110px;
+    }
+}
+@media only screen and (min-width: 401px) and (max-width: 450px) {
+   
+/* about */
+
+    .about .certificates .slide {
+        width: 380px; 
+    }
+
+    .about .certificates .modal-content {
+        width: 370px;
+        height: 330px;
+    }
+    
+    .about .certificates .modal-content img {
+        width: 320px;
+        padding: 0;
+        margin: 0;
+    }
+    
+
+    /* social Icons */
+    .socialIcons {
+        margin-right: 12px;
+    
+    }
+    /* services */
+    .services .row .column{
+        width: 270px;
+    }
+    .services .row .column h4{
+        margin-top: -11px;
+    }
+    .services .row .column p{
+        margin-bottom: -1px;
+    }
+    .services .row .column .mb-3{
+        width: 25px;
+    }
+    .services .rowSkills .apps {
+        width: 390px;
+        
+    }
+        /* projects */
+    .projects .row {
+        grid-template-columns: 10rem 10rem;
+        gap:12px;
+    }
+    .projects .card {
+        width: 146px;
+        height: 182px;
+    }
+    .projects .card .card-img {
+        width: 145px;
+        height: 120px;
+    }
+    .projects .card:hover {
+        width: 146px;
+    }
+    
+    .projects .card:hover .card-img {
+        width: 145px;
+        height: 120px;
+    }
+}
+@media only screen and (min-width: 451px) and (max-width: 480px) {
+    
+/* about */
+
+
+    .about .certificates .slide {
+        width: 420px; 
+    }
+
+    .about .certificates .modal-content {
+        width: 400px;
+        height: 350px;
+    }
+    
+    .about .certificates .modal-content img {
+        width: 350px;
+    }
+    
+    /* social Icons */
+    .socialIcons {
+        margin-right: 11px;
+    }
+    
+    /* services */
+    .services .row .column{
+        width: 300px;
+        height: 140px;
+    }
+    .services .row .column h4{
+        font-size: 14px;
+        margin-top: -10px;
+    }
+    .services .row .column p{
+        margin-bottom: 7px;
+    }
+    .services .row .column .mb-3{
+        width: 27px;
+    }
+    .services .rowSkills .apps {
+        width: 440px;
+        
+    }
+
+    /* projects */
+    .projects .row {
+        grid-template-columns: 9.5rem 9.5rem;
+        gap:15px;
+    }
+    .projects .card {
+        width: 146px;
+        height: 182px;
+    }
+    .projects .card .card-img {
+        width: 145px;
+        height: 120px;
+    }
+    .projects .card:hover {
+        width: 146px;
+    }
+    
+    .projects .card:hover .card-img {
+        width: 145px;
+        height: 120px;
+    }
+}

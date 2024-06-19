@@ -26,7 +26,7 @@ function showAbout() {
 }
 function showProjects() {
   about.style.display = "none";
-  projects.style.display = "block";
+  projects.style.display = "grid";
   skills.style.display = "none";
   contact.style.display = "none";
   projectsLink.style.paddingBottom = "10px";
